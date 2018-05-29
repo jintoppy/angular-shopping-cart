@@ -1,4 +1,4 @@
 angular.module('angular-shopping-cart.catalog')
-    .component('product-detail', {
+    .component('productDetail', {
         templateUrl: 'src/catalog/components/product-detail/product-detail.tpl.html'
     });
