@@ -1,0 +1,1 @@
+http://5b0cfb6e8126c900149974fe.mockapi.io/products
