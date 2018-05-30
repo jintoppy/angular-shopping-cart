@@ -10,7 +10,17 @@ catalog.config(['$stateProvider', function($stateProvider){
     $stateProvider.state({
         name: 'productDetail',
         url: '/product/{productId}',
-        component: 'productDetail'
+        component: 'productDetail',
+        resolve: {
+            product: ['CatalogService', '$transition$', 
+            function(CatalogService, $transition$){
+                const params = $transition$.params();
+                return CatalogService.getProductById(params.productId)
+                            .then(function(response){
+                                return response.data;
+                            });
+            }]
+        }
     });
 
 }]);

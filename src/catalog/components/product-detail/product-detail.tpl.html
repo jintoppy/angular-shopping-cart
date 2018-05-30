@@ -1,1 +1,10 @@
-<h2>Product ddetail page</h2>
+<div class="row">
+    <div class="col-8 offset-2">
+        <h3>{{$ctrl.product.name}}</h3>
+        <img ng-src="{{$ctrl.product.imageUrl}}" class="img-fluid">
+        <p>
+            {{$ctrl.product.price | currency}}
+        </p>
+        <button class="btn btn-primary">Add to Cart</button>
+    </div>
+</div>
