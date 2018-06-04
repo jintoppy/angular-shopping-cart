@@ -6,5 +6,10 @@ function($http, AppConstant){
     };
     this.getProductById = function(id){
         return $http.get(AppConstant.API.BASE_URL + AppConstant.API.PRODUCTS + '/' + id);
-    }
+    };
+
+    this.addProduct = function(productDetails){
+       return $http.post(AppConstant.API.BASE_URL + AppConstant.API.PRODUCTS, productDetails); 
+    };
+
 }]);
