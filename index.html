@@ -12,7 +12,14 @@
                 <h5>Angular Shopping Cart</h5>
             </div>
             <div class="col-4 navigation">
-                Navigation
+                <ul>
+                    <li>
+                        <a ui-sref="productList">Home</a>
+                    </li>
+                    <li>
+                        <a ui-sref="addProduct">Add Product</a>
+                    </li>
+                </ul>
             </div>
             <div class="col-4">
                 <minicart></minicart>
@@ -34,6 +41,7 @@
     <script src="src/cart/components/minicart/minicart.js"></script>
     <script src="src/catalog/components/product-detail/product-detail.js"></script>
     <script src="src/catalog/components/product-list/product-list.js"></script>
+    <script src="src/catalog/components/add-product/add-product.js"></script>
     <script src="src/catalog/catalog.service.js"></script>
     <script src="src/cart/cart.service.js"></script>
 </body>

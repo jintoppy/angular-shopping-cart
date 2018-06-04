@@ -8,6 +8,12 @@ catalog.config(['$stateProvider', function($stateProvider){
     });
 
     $stateProvider.state({
+        name: 'addProduct',
+        url: '/add-product',
+        component: 'addProduct'
+    });
+
+    $stateProvider.state({
         name: 'productDetail',
         url: '/product/{productId}',
         component: 'productDetail',
